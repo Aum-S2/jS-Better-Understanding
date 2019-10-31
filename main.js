@@ -88,6 +88,7 @@ var a = 4 + 7;
 var b = 5 < 2;
 var c = 6 - 3;
 var d = 9 > 8;
+
 console.log(a);
 console.log(b);
 console.log(c);

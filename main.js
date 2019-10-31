@@ -82,7 +82,7 @@
 
 
 
-// Operators *Operator a special function that is syntactically (written)
+// *****Operators *Operator a special function that is syntactically (written)
 
 // var a = 4 + 7;
 // var b = 5 < 2;
@@ -98,17 +98,44 @@
 // *take a look at operator precedence table*
 // The following table is ordered from highest (20) to lowest (1) precedence.
 // higher number first.
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
 
 // var a = 4 + 5 * 6;
 // console.log(a);
 // var b = (4 + 5) * 6;
 // console.log(b);
 
-var a = 2, b = 3, c = 4, d = 5;
+// var a = 2, b = 3, c = 4, d = 5;
 
-a = b = c = d;
+// a = b = c = d;
 
-console.log(a);
-console.log(b);
-console.log(c);
-console.log(d);
+// console.log(a);
+// console.log(b);
+// console.log(c);
+// console.log(d);
+
+
+
+// ***conceptual aside: Coercion
+
+// var a = 1 + ' 2';
+// console.log(a);
+
+
+// ***Comparison Operators
+// Look At Operator precedence Table
+// 3 < 2 = false / false = 0 (true = 1) / so 0 < 1 = true
+
+// console.log(3 < 2 < 1); 
+
+//*YOU SHOULD USE === Instead of == / and !== Instead of != / 99% f the time.
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness
+
+var a = 0;
+var b = false;
+
+if (a === b) {
+  console.log('It Equal My Friend!');
+} else {
+  console.log('NOPE!, YOU ARE WRONG');
+}

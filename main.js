@@ -82,12 +82,31 @@
 
 
 
-// Operators *Operators are functions
+// Operators *Operator a special function that is syntactically (written)
 
-var a = 4 + 7;
-var b = 5 < 2;
-var c = 6 - 3;
-var d = 9 > 8;
+// var a = 4 + 7;
+// var b = 5 < 2;
+// var c = 6 - 3;
+// var d = 9 > 8;
+
+// console.log(a);
+// console.log(b);
+// console.log(c);
+// console.log(d);
+
+// Operator presedence just means which operator function gets called first *Functions are called in order of precedence (HIGHER Precedence wins)
+// *take a look at operator precedence table*
+// The following table is ordered from highest (20) to lowest (1) precedence.
+// higher number first.
+
+// var a = 4 + 5 * 6;
+// console.log(a);
+// var b = (4 + 5) * 6;
+// console.log(b);
+
+var a = 2, b = 3, c = 4, d = 5;
+
+a = b = c = d;
 
 console.log(a);
 console.log(b);

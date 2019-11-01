@@ -131,11 +131,25 @@
 //*YOU SHOULD USE === Instead of == / and !== Instead of != / 99% f the time.
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness
 
-var a = 0;
-var b = false;
+// var a = 0;
+// var b = false;
 
-if (a === b) {
-  console.log('It Equal My Friend!');
-} else {
-  console.log('NOPE!, YOU ARE WRONG');
+// if (a === b) {
+//   console.log('It Equal My Friend!');
+// } else {
+//   console.log('NOPE!, YOU ARE WRONG');
+// }
+
+
+
+// *****Existence And Booleans
+// 0 = false
+var a;
+
+// goes to internet and look for value
+
+a = 0;
+
+if (a || a === 0) {
+  console.log('something is there');
 }

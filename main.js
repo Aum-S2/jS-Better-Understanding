@@ -144,12 +144,25 @@
 
 // *****Existence And Booleans
 // 0 = false
-var a;
+// var a;
 
-// goes to internet and look for value
+// // goes to internet and look for value
 
-a = 0;
+// a = 0;
 
-if (a || a === 0) {
-  console.log('something is there');
+// if (a || a === 0) {
+//   console.log('something is there');
+// }
+
+
+
+
+// *****Default Values
+
+function greet(name) {
+  name = name || '<Set Your Name!>';
+  console.log('hello ' + name);
 }
+
+greet('Robin');
+greet();

@@ -159,10 +159,17 @@
 
 // *****Default Values
 
-function greet(name) {
-  name = name || '<Set Your Name!>';
-  console.log('hello ' + name);
-}
+// function greet(name) {
+//   name = name || '<Set Your Name!>';
+//   console.log('hello ' + name);
+// }
 
-greet('Robinn');
-greet();
+// greet('Robinn');
+// greet();
+
+
+
+
+// Framework Aside: Default values
+
+console.log(libraryName);

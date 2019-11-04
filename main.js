@@ -271,12 +271,12 @@
 // Object Literals And JSON string theres two diffent thing.
 // Javascript does have ultilities to allow you to tranfer between the two.
 
-var objectLiterals = {
-  firstname: "natsu",
-  isAProgrammer: true
-};
+// var objectLiterals = {
+//   firstname: "natsu",
+//   isAProgrammer: true
+// };
 
-console.log(JSON.stringify(objectLiterals));
+// console.log(JSON.stringify(objectLiterals));
 
 
 // *In previous years, data was sent over the internet in various formats and the format that was landed upon for a while was XML.
@@ -298,6 +298,24 @@ console.log(JSON.stringify(objectLiterals));
 // Meaning that anything that is JSON valid is also valid Javascript Object Literal syntax. BUT not all Object Literals syntax is valid JSON. so JSON has stricter rules of what it can be.
 // SO JSON, Javascript Object Notation, isnt really a part of Javascript. but because of its so popular and its so easy for Javascript to understand what this is, Javascript does come with some built in functionality to transfer between the two 
 
-var jsonValue = JSON.parse('{ "firstname": "natsu", "isAProgrammer": true }');
+// var jsonValue = JSON.parse('{ "firstname": "natsu", "isAProgrammer": true }');
 
-console.log(jsonValue);
+// console.log(jsonValue);
+
+
+
+
+// ***** Functions are Object
+// this greet function, and when it was created, this function Object was put in the memory, in this case, onto the global Object, and it had a name(greet), so the name property is greet, because that whats i named my function.
+// and its has a code property that contains the code that i wrote, the body of my function.
+// and so if i was to call greet using the parentheses(), that invokes that code, causes it run, causes that execution context to be created, etc, etc.
+
+// ** YOU have to think of a function as more than just this container of code. its a Object, and as such, you can pass it around, it sits in the memory in specific location its has properties, its has methods. WHY? because in Javascript functions are Objects.
+
+
+function greet() {
+  console.log('Hello World');
+}
+
+greet.language = 'english';
+console.log(greet.language);

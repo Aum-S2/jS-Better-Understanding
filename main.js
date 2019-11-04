@@ -246,19 +246,58 @@
 
 // *****Faking namespace
 
-var greet = "hello";
-var greet = "hola!";
+// var greet = "hello";
+// var greet = "hola!";
 
-console.log(greet);
+// console.log(greet);
 
-var english = {
-  greetings: {
-    basic: "Hello!"
-  }
+// var english = {
+//   greetings: {
+//     basic: "Hello!"
+//   }
+// };
+
+// var spanish = {};
+
+// spanish.greet = "hola";
+
+// console.log(english);
+
+
+
+
+// *****JSON And Object Literals.
+// JSON stand for "Javascript Object Notation"
+// Object Literals And JSON string theres two diffent thing.
+// Javascript does have ultilities to allow you to tranfer between the two.
+
+var objectLiterals = {
+  firstname: "natsu",
+  isAProgrammer: true
 };
 
-var spanish = {};
+console.log(JSON.stringify(objectLiterals));
 
-spanish.greet = "hola";
 
-console.log(english);
+// *In previous years, data was sent over the internet in various formats and the format that was landed upon for a while was XML.
+
+// *this is just exemple (this is not the valid javascript -- across the wire the internet)
+// **but the problem is when you dealing with the download times, how fast something is and how much data, how much bandwidth are you using. This is alot of extra unnecessary characters that make the amount of data that you are sending larger.
+
+// <Object>
+//   <firstname>natsu</firstname>
+//   <isAProgrammer>true</isAProgrammer>
+// </Object>
+
+// **So what people did was looked at the Javascript Object Notation and found out, that would make a really great way to send the data.
+// nowdays we sending data via the JSON format. its just string of data but it looks like Object Literal syntax expect for some differences.
+// for exemple, properties have to be wrap in the quotes.
+// This is valid Object Literal Syntax
+
+// JSON is technically a subset of the Object Literal Syntax. 
+// Meaning that anything that is JSON valid is also valid Javascript Object Literal syntax. BUT not all Object Literals syntax is valid JSON. so JSON has stricter rules of what it can be.
+// SO JSON, Javascript Object Notation, isnt really a part of Javascript. but because of its so popular and its so easy for Javascript to understand what this is, Javascript does come with some built in functionality to transfer between the two 
+
+var jsonValue = JSON.parse('{ "firstname": "natsu", "isAProgrammer": true }');
+
+console.log(jsonValue);

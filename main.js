@@ -212,7 +212,7 @@
 
 
 
-// Objects and Object Literals
+// *****Objects and Object Literals
 //  {} is the same as you type *new Object()* -- a short hand^ * Its called an Object Literal
 
 // var Rins = { 
@@ -243,3 +243,22 @@
 
 
 
+
+// *****Faking namespace
+
+var greet = "hello";
+var greet = "hola!";
+
+console.log(greet);
+
+var english = {
+  greetings: {
+    basic: "Hello!"
+  }
+};
+
+var spanish = {};
+
+spanish.greet = "hola";
+
+console.log(english);

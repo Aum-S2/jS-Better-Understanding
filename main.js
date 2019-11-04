@@ -172,4 +172,37 @@
 
 // Framework Aside: Default values
 
-console.log(libraryName);
+// console.log(libraryName);
+
+
+
+
+// ***** Objects and The Dot
+// *Objects are values pairs sitting in memory. they can contain other name values pairs, that is, other Object.
+// *They can contain other properties, string, Booleans, Numbers. **They can also contain functions, Which are called Methods
+
+// *** (This is not the preferred way to created a new Object).
+// you can should using the dot . instead of bracket[] operator (*Its very clean, clear and also easier to debug and find problems)
+// *(the preferred appoach is to using the dot operator)
+
+var person = new Object();
+
+person["firstname"] = "Nami";
+person["lastname"] = "Waluine";
+
+var firstnameProperty = "firstname";
+
+console.log(person);
+console.log(person[firstnameProperty]);
+
+console.log(person.firstname);
+console.log(person.lastname);
+
+person.address = new Object();
+person.address.street = "11 main st.";
+person.address.city = "Ohaio";
+person.address.state = "OH";
+
+console.log(person.address.street);
+console.log(person.address.city);
+console.log(person["address"]["state"]);

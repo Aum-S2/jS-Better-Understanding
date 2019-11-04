@@ -177,6 +177,8 @@
 
 
 
+// ********************************************************
+
 // ***** Objects and The Dot
 // *Objects are values pairs sitting in memory. they can contain other name values pairs, that is, other Object.
 // *They can contain other properties, string, Booleans, Numbers. **They can also contain functions, Which are called Methods
@@ -185,24 +187,59 @@
 // you can should using the dot . instead of bracket[] operator (*Its very clean, clear and also easier to debug and find problems)
 // *(the preferred appoach is to using the dot operator)
 
-var person = new Object();
+// var person = new Object();
 
-person["firstname"] = "Nami";
-person["lastname"] = "Waluine";
+// person["firstname"] = "Nami";
+// person["lastname"] = "Waluine";
 
-var firstnameProperty = "firstname";
+// var firstnameProperty = "firstname";
 
-console.log(person);
-console.log(person[firstnameProperty]);
+// console.log(person);
+// console.log(person[firstnameProperty]);
 
-console.log(person.firstname);
-console.log(person.lastname);
+// console.log(person.firstname);
+// console.log(person.lastname);
 
-person.address = new Object();
-person.address.street = "11 main st.";
-person.address.city = "Ohaio";
-person.address.state = "OH";
+// person.address = new Object();
+// person.address.street = "11 main st.";
+// person.address.city = "Ohaio";
+// person.address.state = "OH";
 
-console.log(person.address.street);
-console.log(person.address.city);
-console.log(person["address"]["state"]);
+// console.log(person.address.street);
+// console.log(person.address.city);
+// console.log(person["address"]["state"]);
+
+
+
+
+// Objects and Object Literals
+//  {} is the same as you type *new Object()* -- a short hand^ * Its called an Object Literal
+
+// var Rins = { 
+//   firstname: "Rins", 
+//   lastname: "xiuoso",
+//   address: {
+//     street: '67 kleang st.',
+//     city: 'baiart',
+//     world: 'shabfu'
+//   }
+// };
+
+// function greet(person) {
+//   console.log('hi ' + person.firstname);
+// }
+
+// greet(Rins);
+
+// // we can create an Object on the fly
+// greet({
+//   firstname: 'Sara',
+//   lastname: 'Jensen'
+// });
+
+// Rins.address2 = {
+//   street: "123 main st."
+// };
+
+
+

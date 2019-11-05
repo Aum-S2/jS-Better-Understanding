@@ -326,25 +326,73 @@
 // *****Function Statements And Function Expressions
 
 // Function Statement, Hoisted into memory, during the creation phase of the execution context
-greet();
 
-function greet() {
-  console.log('Hello');
-}
+// greet();
+
+// function greet() {
+//   console.log('Hello');
+// }
 
 // Function Expression, thats used as part of equals operator, to set it to a variable. then we can use that variable to invoke it.
-var annoymousGreet = function() {
-  console.log('Hi!');
-};
 
-annoymousGreet();
+// var annoymousGreet = function() {
+//   console.log('Hi!');
+// };
+
+// annoymousGreet();
 
 // Function Expression, that im passing a function, as a parameter to another function. and then i can use it.
+// This concect of first class functions then, where you can pass functions around, gives functions to another functions, **use them like you do variables.
 
-function log(a) {
-  a();
+// function log(a) {
+//   a();
+// }
+
+// log(function() {
+//   console.log('im Object');
+// });
+
+
+
+
+// *****By Value vs By Reference
+
+// By Value (primitives)
+var a = 3;
+var b;
+
+b = a;
+a = 2;
+
+console.log(a);
+console.log(b);
+
+// By Reference (All Object (Including Functions))
+// we have Object in memory, with a property called greetings,  whose value is 'Hello My Friend!' and i change that properties value to 'WhatsUP'. **I MUTATE.
+var c = { Greetings: 'Hello My Friend!'};
+var d;
+
+d = c;
+c.Greetings = 'WhatsUP'; // Mutate - means to change something.
+
+console.log(c);
+console.log(d);
+
+// By reference (Even as Parameters)
+// We understand that just like equals, passing an Object to a function means theyre being passed by reference, NOT by value.
+// **So, (obj) will simply point to the same memory location as *d* and *d* is already points to the same memory location as *c*
+// **so when this is mutated, meaning go update that object that siting in there in that memory location, and i go output these (c and d).
+
+function changeGreeting(obj) {
+  obj.Greetings = 'Hola!';
 }
 
-log(function() {
-  console.log('im Object');
-});
+changeGreeting(d);
+console.log(c);
+console.log(d);
+
+// Equals operator sets up new memory space (new address)
+c = { Greetings: 'Howdy!'};
+
+console.log(c);
+console.log(d);

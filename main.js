@@ -313,9 +313,38 @@
 // ** YOU have to think of a function as more than just this container of code. its a Object, and as such, you can pass it around, it sits in the memory in specific location its has properties, its has methods. WHY? because in Javascript functions are Objects.
 
 
+// function greet() {
+//   console.log('Hello World');
+// }
+
+// greet.language = 'english';
+// console.log(greet.language);
+
+
+
+
+// *****Function Statements And Function Expressions
+
+// Function Statement, Hoisted into memory, during the creation phase of the execution context
+greet();
+
 function greet() {
-  console.log('Hello World');
+  console.log('Hello');
 }
 
-greet.language = 'english';
-console.log(greet.language);
+// Function Expression, thats used as part of equals operator, to set it to a variable. then we can use that variable to invoke it.
+var annoymousGreet = function() {
+  console.log('Hi!');
+};
+
+annoymousGreet();
+
+// Function Expression, that im passing a function, as a parameter to another function. and then i can use it.
+
+function log(a) {
+  a();
+}
+
+log(function() {
+  console.log('im Object');
+});

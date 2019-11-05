@@ -380,7 +380,10 @@ console.log(d);
 
 // By reference (Even as Parameters)
 // We understand that just like equals, passing an Object to a function means theyre being passed by reference, NOT by value.
-// **So, (obj) will simply point to the same memory location as *d* and *d* is already points to the same memory location as *c*
+
+// **so i have this *d* variable. its pointing at the same memory space as *c* (as now its set equal to WhatsUP).
+// **so i will call *changeGreeting* and i will pass d to this function *changeGreeting* so d will be passed to here(), that will be what (obj) is. 
+// **so, (obj) will simply point to the same memory location as *d* and *d* is already points to the same memory location as *c*
 // **so when this is mutated, meaning go update that object that siting in there in that memory location, and i go output these (c and d).
 
 function changeGreeting(obj) {

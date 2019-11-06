@@ -358,25 +358,25 @@
 // *****By Value vs By Reference
 
 // By Value (primitives)
-var a = 3;
-var b;
+// var a = 3;
+// var b;
 
-b = a;
-a = 2;
+// b = a;
+// a = 2;
 
-console.log(a);
-console.log(b);
+// console.log(a);
+// console.log(b);
 
 // By Reference (All Object (Including Functions))
 // we have Object in memory, with a property called greetings,  whose value is 'Hello My Friend!' and i change that properties value to 'WhatsUP'. **I MUTATE.
-var c = { Greetings: 'Hello My Friend!'};
-var d;
+// var c = { Greetings: 'Hello My Friend!'};
+// var d;
 
-d = c;
-c.Greetings = 'WhatsUP'; // Mutate - means to change something.
+// d = c;
+// c.Greetings = 'WhatsUP'; // Mutate - means to change something.
 
-console.log(c);
-console.log(d);
+// console.log(c);
+// console.log(d);
 
 // By reference (Even as Parameters)
 // We understand that just like equals, passing an Object to a function means theyre being passed by reference, NOT by value.
@@ -386,16 +386,16 @@ console.log(d);
 // **so, (obj) will simply point to the same memory location as *d* and *d* is already points to the same memory location as *c*
 // **so when this is mutated, meaning go update that object that siting in there in that memory location, and i go output these (c and d).
 
-function changeGreeting(obj) {
-  obj.Greetings = 'Hola!';
-}
+// function changeGreeting(obj) {
+//   obj.Greetings = 'Hola!';
+// }
 
-changeGreeting(d);
-console.log(c);
-console.log(d);
+// changeGreeting(d);
+// console.log(c);
+// console.log(d);
 
-// Equals operator sets up new memory space (new address)
-c = { Greetings: 'Howdy!'};
+// // Equals operator sets up new memory space (new address)
+// c = { Greetings: 'Howdy!'};
 
-console.log(c);
-console.log(d);
+// console.log(c);
+// console.log(d);

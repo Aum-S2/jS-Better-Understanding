@@ -7,35 +7,58 @@
 // method --> Object
 // function --> global ( window(in browsers), global(in node) )
  
-function a() {
-  console.log(this);
-  this.newVariable = 'Hello Lovers';
-}
+// function a() {
+//   console.log(this);
+//   this.newVariable = 'Hello Lovers';
+// }
 
-var b = function () {
-  console.log(this);
-};
+// var b = function () {
+//   console.log(this);
+// };
 
-a();
+// a();
 
-console.log(newVariable);
+// console.log(newVariable);
 
-b();
+// b();
 
-var c = {
-  name: 'The c Object',
-  log: function () {
-    var self = this;
+// var c = {
+//   name: 'The c Object',
+//   log: function () {
+//     var self = this;
 
-    self.name = 'Updated c Object';
-    console.log(self);
+//     self.name = 'Updated c Object';
+//     console.log(self);
 
-    var setname = function (newname) {
-      self.name = newname;
-    };
-    setname('Updated again! the c Object');
-    console.log(self);
-  }
-};
+//     var setname = function (newname) {
+//       self.name = newname;
+//     };
+//     setname('Updated again! the c Object');
+//     console.log(self);
+//   }
+// };
 
-c.log();
+// c.log();
+
+
+
+
+
+// *****Arrays Collections of Everything.
+// so basicly array can hold everything 'number, booleans, Object, function and string'
+var Arr = [
+  1,
+  false,
+  {
+    name: 'chery',
+    address: '123 main st'
+  },
+  function(name) {
+    var greeting = 'Hello ';
+    console.log(greeting + name);
+  },
+  'The Cold'
+];
+
+console.log(Arr);
+Arr[3](Arr[2].name);

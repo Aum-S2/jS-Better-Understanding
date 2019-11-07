@@ -46,19 +46,41 @@
 
 // *****Arrays Collections of Everything.
 // so basicly array can hold everything 'number, booleans, Object, function and string'
-var Arr = [
-  1,
-  false,
-  {
-    name: 'chery',
-    address: '123 main st'
-  },
-  function(name) {
-    var greeting = 'Hello ';
-    console.log(greeting + name);
-  },
-  'The Cold'
-];
+// var Arr = [
+//   1,
+//   false,
+//   {
+//     name: 'chery',
+//     address: '123 main st'
+//   },
+//   function(name) {
+//     var greeting = 'Hello ';
+//     console.log(greeting + name);
+//   },
+//   'The Cold'
+// ];
 
-console.log(Arr);
-Arr[3](Arr[2].name);
+// console.log(Arr);
+// Arr[3](Arr[2].name);
+
+
+
+
+// *****'argument' and spread
+// *the concept of arguments is just in general, is just another name for the  parameters you can pass to a function. *so you could say your parameters/ so can also say your arguments. thats really in the case of any programming language that has functions.
+// *However, javascript gives you a keyword of that same name which contains them all.
+
+
+function greet(firstname, lastname, language) {
+
+  console.log(firstname);
+  console.log(lastname);
+  console.log(language);
+  console.log('------------------');
+
+}
+
+greet();
+greet('Machaela');
+greet('Machaela', 'Larsen');
+greet('Machaela', 'Larsen', 'en');

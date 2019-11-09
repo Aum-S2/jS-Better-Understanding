@@ -71,26 +71,56 @@
 // *However, javascript gives you a keyword of that same name which contains them all.
 
 
+// function greet(firstname, lastname, language) {
+
+//   language = language || 'en';
+
+//   if(arguments.length === 0) {
+//     console.log('missing parameters');
+//     console.log('-----------------');
+//     return;
+//   }
+
+//   console.log(firstname);
+//   console.log(lastname);
+//   console.log(language);
+//   console.log(arguments);
+//   console.log('arg 0: ' + arguments[0]);
+//   console.log('------------------');
+
+// }
+
+// greet();
+// greet('Machaela');
+// greet('Machaela', 'Larsen');
+// greet('Machaela', 'Larsen', 'en');
+
+
+
+
+
+// ******function overloading
+
 function greet(firstname, lastname, language) {
 
-  language = language || 'en';
+    language = language || 'en';
 
-  if(arguments.length === 0) {
-    console.log('missing parameters');
-    console.log('-----------------');
-    return;
-  }
+    if(language === 'en') {
+      console.log('Hello ' + firstname + ' ' + lastname);
+    }
 
-  console.log(firstname);
-  console.log(lastname);
-  console.log(language);
-  console.log(arguments);
-  console.log('arg 0: ' + arguments[0]);
-  console.log('------------------');
-
+    if(language === 'es') {
+      console.log('Hola!' + firstname + ' ' + lastname);
+    }
 }
 
-greet();
-greet('Machaela');
-greet('Machaela', 'Larsen');
-greet('Machaela', 'Larsen', 'en');
+function greetEnglish(firstname, lastname) {
+  greet(firstname, lastname, 'en');
+}
+
+function greetSpanish(firstname, lastname) {
+  greet(firstname, lastname, 'es');
+}
+
+greetEnglish('panda', 'nawari');
+greetSpanish('panda', 'nawari');

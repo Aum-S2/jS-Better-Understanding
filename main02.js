@@ -101,26 +101,36 @@
 
 // ******function overloading
 
-function greet(firstname, lastname, language) {
+// function greet(firstname, lastname, language) {
 
-    language = language || 'en';
+//     language = language || 'en';
 
-    if(language === 'en') {
-      console.log('Hello ' + firstname + ' ' + lastname);
-    }
+//     if(language === 'en') {
+//       console.log('Hello ' + firstname + ' ' + lastname);
+//     }
 
-    if(language === 'es') {
-      console.log('Hola!' + firstname + ' ' + lastname);
-    }
-}
+//     if(language === 'es') {
+//       console.log('Hola!' + firstname + ' ' + lastname);
+//     }
+// }
 
-function greetEnglish(firstname, lastname) {
-  greet(firstname, lastname, 'en');
-}
+// function greetEnglish(firstname, lastname) {
+//   greet(firstname, lastname, 'en');
+// }
 
-function greetSpanish(firstname, lastname) {
-  greet(firstname, lastname, 'es');
-}
+// function greetSpanish(firstname, lastname) {
+//   greet(firstname, lastname, 'es');
+// }
 
-greetEnglish('panda', 'nawari');
-greetSpanish('panda', 'nawari');
+// greetEnglish('panda', 'nawari');
+// greetSpanish('panda', 'nawari');
+
+
+
+
+
+// *****Syntax parsers
+
+// javascript engine reading your code character by character, using a set of rules for whats valid syntax and deciding what it is that you intend. And thats all happening before your code even executed, so it can make changes if it wants to the code that youve actually written.
+
+// return; // read from left to right.

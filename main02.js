@@ -134,3 +134,18 @@
 // javascript engine reading your code character by character, using a set of rules for whats valid syntax and deciding what it is that you intend. And thats all happening before your code even executed, so it can make changes if it wants to the code that youve actually written.
 
 // return; // read from left to right.
+
+
+
+
+
+// ***** Automatic Semicolon Insertion
+// should you allways put curry brackets in the same line as 'return' so javascript engine doesntput it in automatic and get undefined
+
+function getPerson() {
+  return {
+    firstName: 'Hana'
+  };
+}
+
+console.log(getPerson());

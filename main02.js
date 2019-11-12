@@ -140,7 +140,7 @@
 
 
 // ***** Automatic Semicolon Insertion
-// should you allways put curry brackets in the same line as 'return' so javascript engine doesntput it in automatic and get undefined
+// you should allways put curry brackets in the same line as 'return' so javascript engine doesnt put it in automatic and get undefined
 
 function getPerson() {
   return {

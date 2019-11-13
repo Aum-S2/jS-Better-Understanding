@@ -140,12 +140,55 @@
 
 
 // ***** Automatic Semicolon Insertion
-// you should allways put curry brackets in the same line as 'return' so javascript engine doesnt put it in automatic and get undefined
+// you should allways put curry brackets in the same line as 'return' so javascript engine doesnt put ';' it in automatic and get undefined
 
-function getPerson() {
-  return {
-    firstName: 'Hana'
-  };
+// function getPerson() {
+//   return {
+//     firstName: 'Hana'
+//   };
+// }
+
+// console.log(getPerson());
+
+
+
+
+// *****Whitespace
+// you can use whitespace very liberally to clearify your code.
+// To Explain - To Understand What it is For.
+
+// var 
+
+//   // the first name of the person
+//   firstName, 
+
+//   // the last name of the person
+//   lastName, 
+
+//   // the language
+//   // can be 'en' or 'es'
+//   Language;
+  
+
+// var person = {
+//   firstName: 'Hana',
+//   lastName: 'utanika'
+// }
+
+// console.log(person);
+
+
+
+
+
+// *****Immediately Invoked Functions Expressions
+
+function greet(name) {
+  console.log('hello' + name);
 }
 
-console.log(getPerson());
+greet();
+
+var greetFunc = function(name) {
+  console.log('hello' + name);
+};

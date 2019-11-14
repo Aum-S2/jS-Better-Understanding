@@ -182,13 +182,16 @@
 
 
 // *****Immediately Invoked Functions Expressions
-
+// function Statement
 function greet(name) {
-  console.log('hello' + name);
+  console.log('hello ' + name);
 }
 
-greet();
+greet('Hana');
 
+// Using a Function Expression
 var greetFunc = function(name) {
-  console.log('hello' + name);
+  console.log('hello ' + name);
 };
+
+greetFunc('Hana');

@@ -195,3 +195,8 @@ var greetFunc = function(name) {
 };
 
 greetFunc('Hana');
+
+// Invokes the Function Immediately
+var greeting = function(name) {
+  console.log('hello ' + name);
+}();

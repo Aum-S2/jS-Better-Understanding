@@ -6,7 +6,7 @@
 
 // method --> Object
 // function --> global ( window(in browsers), global(in node) )
- 
+
 // function a() {
 //   console.log(this);
 //   this.newVariable = 'Hello Lovers';
@@ -168,7 +168,7 @@
 //   // the language
 //   // can be 'en' or 'es'
 //   Language;
-  
+
 
 // var person = {
 //   firstName: 'Hana',
@@ -184,20 +184,32 @@
 // *****Immediately Invoked Functions Expressions
 // function Statement
 function greet(name) {
-  console.log('hello ' + name);
+  console.log('Hello ' + name);
 }
 
 greet('Hana');
 
 // Using a Function Expression
-var greetFunc = function(name) {
-  console.log('hello ' + name);
+var greetFunc = function (name) {
+  console.log('Hello ' + name);
 };
 
 greetFunc('John');
 
 // Using An Immediately Invokes function Expression (IIFE)
-var greeting = function(name) {
+var greeting = function (name) {
   return 'Whatsup ' + name;
-};
-console.log(greeting('Hana'));
+}('Hana2');
+console.log(greeting);
+
+
+
+
+var firstName = 'Lim';
+
+(function(name) {
+
+  var greeting = 'Inside IIFE: Hello';
+  console.log(greeting + ' ' + name);
+
+}(firstName)); // IIFE

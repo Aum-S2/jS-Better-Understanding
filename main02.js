@@ -203,8 +203,7 @@ var greeting = function (name) {
 console.log(greeting);
 
 
-
-
+// Invokes With Parentheses
 var firstName = 'Lim';
 
 (function(name) {

@@ -194,9 +194,10 @@ var greetFunc = function(name) {
   console.log('hello ' + name);
 };
 
-greetFunc('Hana');
+greetFunc('John');
 
-// Invokes the Function Immediately
+// Using An Immediately Invokes function Expression (IIFE)
 var greeting = function(name) {
-  console.log('hello ' + name);
-}();
+  return 'Whatsup ' + name;
+};
+console.log(greeting('Hana'));

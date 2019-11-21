@@ -204,6 +204,7 @@ console.log(greeting);
 
 
 // Invokes With Parentheses
+// Which one you choose is up to you
 var firstName = 'Lim';
 
 (function(name) {

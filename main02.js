@@ -183,33 +183,50 @@
 
 // *****Immediately Invoked Functions Expressions
 // function Statement
-function greet(name) {
-  console.log('Hello ' + name);
+
+// function greet(name) {
+//   console.log('Hello ' + name);
+// }
+
+// greet('Hana');
+
+// // Using a Function Expression
+// var greetFunc = function (name) {
+//   console.log('Hello ' + name);
+// };
+
+// greetFunc('John');
+
+// // Using An Immediately Invokes function Expression (IIFE)
+// var greeting = function (name) {
+//   return 'Whatsup ' + name;
+// }('Hana2');
+// console.log(greeting);
+
+
+// // Invokes With Parentheses
+// // Which one you choose is up to you but in parentheses is easier to understand what it is
+// var firstName = 'Lim';
+
+// (function(name) {
+
+//   var greeting = 'Inside IIFE: Hello';
+//   console.log(greeting + ' ' + name);
+
+// }(firstName)); // IIFE
+
+
+
+
+
+// ******Understanding Closures
+
+function greet(whattosay) {
+
+  return function(name) {
+    console.log(whattosay + ' ' + name);
+  };
 }
 
-greet('Hana');
-
-// Using a Function Expression
-var greetFunc = function (name) {
-  console.log('Hello ' + name);
-};
-
-greetFunc('John');
-
-// Using An Immediately Invokes function Expression (IIFE)
-var greeting = function (name) {
-  return 'Whatsup ' + name;
-}('Hana2');
-console.log(greeting);
-
-
-// Invokes With Parentheses
-// Which one you choose is up to you but in parentheses is easier to understand what it is
-var firstName = 'Lim';
-
-(function(name) {
-
-  var greeting = 'Inside IIFE: Hello';
-  console.log(greeting + ' ' + name);
-
-}(firstName)); // IIFE
+var sayHi = greet('Hi');
+sayHi('Hanabi');

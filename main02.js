@@ -220,7 +220,7 @@
 
 
 // ******Understanding Closures
-
+// Closure are simply a future of the Javascript 
 function greet(whattosay) {
 
   return function(name) {

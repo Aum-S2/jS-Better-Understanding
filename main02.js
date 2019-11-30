@@ -221,12 +221,34 @@
 
 // ******Understanding Closures
 // Closure are simply a future of the Javascript 
-function greet(whattosay) {
 
-  return function(name) {
-    console.log(whattosay + ' ' + name);
-  };
+// function greet(whattosay) {
+
+//   return function(name) {
+//     console.log(whattosay + ' ' + name);
+//   };
+// }
+
+// var sayHi = greet('Hi');
+// sayHi('Hanabi');
+
+
+
+// ***** Closures 2 
+
+function buildFunctions() {
+  var arr = [];
+  for (var i = 0; i < 3; i++) {
+    arr.push(
+      function() {
+        console.log(i);
+      }
+    )
+  }
+  return arr;
 }
 
-var sayHi = greet('Hi');
-sayHi('Hanabi');
+var fs = buildFunctions();
+fs[0]();
+fs[1]();
+fs[2]();

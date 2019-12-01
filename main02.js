@@ -235,7 +235,7 @@
 
 
 // ***** Closures 2 
-
+// Should rewatch function expression also to have beeter understand
 function buildFunctions() {
   var arr = [];
   for (var i = 0; i < 3; i++) {
@@ -243,7 +243,7 @@ function buildFunctions() {
       function() {
         console.log(i);
       }
-    )
+    );
   }
   return arr;
 }

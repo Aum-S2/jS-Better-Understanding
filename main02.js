@@ -236,6 +236,7 @@
 
 // ***** Closures 2 
 // Should rewatch function expression also to have beeter understand
+// why does it works
 function buildFunctions() {
   var arr = [];
   for (var i = 0; i < 3; i++) {

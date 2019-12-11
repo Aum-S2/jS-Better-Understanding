@@ -258,16 +258,17 @@ fs[2]();
 function buildFunctions2() {
   var arr = [];
   for (var i = 0; i < 3; i++) {
+    let j = i;
     arr.push(
       function() {
-        console.log(i);
+        console.log(j);
       }
     );
   }
   return arr;
 }
 
-var fs2 = buildFunctions();
+var fs2 = buildFunctions2();
 fs2[0]();
 fs2[1]();
 fs2[2]();

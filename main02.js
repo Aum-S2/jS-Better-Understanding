@@ -253,3 +253,21 @@ var fs = buildFunctions();
 fs[0]();
 fs[1]();
 fs[2]();
+
+// functions2 
+function buildFunctions2() {
+  var arr = [];
+  for (var i = 0; i < 3; i++) {
+    arr.push(
+      function() {
+        console.log(i);
+      }
+    );
+  }
+  return arr;
+}
+
+var fs2 = buildFunctions();
+fs2[0]();
+fs2[1]();
+fs2[2]();

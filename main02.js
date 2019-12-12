@@ -254,7 +254,7 @@ fs[0]();
 fs[1]();
 fs[2]();
 
-// functions2 
+// functions2 new javascript way
 function buildFunctions2() {
   var arr = [];
   for (var i = 0; i < 3; i++) {
@@ -272,3 +272,24 @@ var fs2 = buildFunctions2();
 fs2[0]();
 fs2[1]();
 fs2[2]();
+
+
+// ES5 Old Way
+function buildFunctions3() {
+  var arr = [];
+  for (var i = 0; i < 3; i++) {
+    arr.push(
+      (function(j) {
+        return function() {
+          console.log(j);
+        }
+      }(i))
+    );
+  }
+  return arr;
+}
+
+var fs3 = buildFunctions3();
+fs3[0]();
+fs3[1]();
+fs3[2]();

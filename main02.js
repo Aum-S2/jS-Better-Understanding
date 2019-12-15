@@ -274,7 +274,7 @@ fs2[1]();
 fs2[2]();
 
 
-// ES5 Old Way - this is a way to use closures
+// ES5 Old Way - this is a way to use closures(practise)
 function buildFunctions3() {
   var arr = [];
   for (var i = 0; i < 3; i++) {

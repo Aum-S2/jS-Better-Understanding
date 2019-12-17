@@ -254,7 +254,7 @@ fs[0]();
 fs[1]();
 fs[2]();
 
-// functions2 new javascript way
+// functions2 new javascript way (pref)
 function buildFunctions2() {
   var arr = [];
   for (var i = 0; i < 3; i++) {

@@ -237,6 +237,7 @@
 // ***** Closures 2 
 // Should rewatch function expression also to have beeter understand
 // i is 3 so fs[0], fs[1], fs[2] = 3 // bcuz it has the same outer environment reference because it was created the same place as the first function (it the same spot in memory as the first one)
+// this isnt working as u wanted it to be
 function buildFunctions() {
   var arr = [];
   for (var i = 0; i < 3; i++) {

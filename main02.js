@@ -240,59 +240,63 @@
 // learn first class functions too and practise more
 // this isnt working as u wanted it to be
 
-function buildFunctions() {
-  var arr = [];
-  for (var i = 0; i < 3; i++) {
-    arr.push(
-      function() {
-        console.log(i);
-      }
-    );
-  }
-  return arr;
-}
+// function buildFunctions() {
+//   var arr = [];
+//   for (var i = 0; i < 3; i++) {
+//     arr.push(
+//       function() {
+//         console.log(i);
+//       }
+//     );
+//   }
+//   return arr;
+// }
 
-var fs = buildFunctions();
-fs[0]();
-fs[1]();
-fs[2]();
+// var fs = buildFunctions();
+// fs[0]();
+// fs[1]();
+// fs[2]();
 
-// functions2 new javascript way (pref)
-function buildFunctions2() {
-  var arr = [];
-  for (var i = 0; i < 3; i++) {
-    let j = i;
-    arr.push(
-      function() {
-        console.log(j);
-      }
-    );
-  }
-  return arr;
-}
+// // functions2 new javascript way (pref)
+// function buildFunctions2() {
+//   var arr = [];
+//   for (var i = 0; i < 3; i++) {
+//     let j = i;
+//     arr.push(
+//       function() {
+//         console.log(j);
+//       }
+//     );
+//   }
+//   return arr;
+// }
 
-var fs2 = buildFunctions2();
-fs2[0]();
-fs2[1]();
-fs2[2]();
+// var fs2 = buildFunctions2();
+// fs2[0]();
+// fs2[1]();
+// fs2[2]();
 
 
-// ES5 Old Way - this is a way to use closures(practise)
-function buildFunctions3() {
-  var arr = [];
-  for (var i = 0; i < 3; i++) {
-    arr.push(
-      (function(j) {
-        return function() {
-          console.log(j);
-        }
-      }(i))
-    );
-  }
-  return arr;
-}
+// // ES5 Old Way - this is a way to use closures(practise)
+// function buildFunctions3() {
+//   var arr = [];
+//   for (var i = 0; i < 3; i++) {
+//     arr.push(
+//       (function(j) {
+//         return function() {
+//           console.log(j);
+//         }
+//       }(i))
+//     );
+//   }
+//   return arr;
+// }
 
-var fs3 = buildFunctions3();
-fs3[0]();
-fs3[1]();
-fs3[2]();
+// var fs3 = buildFunctions3();
+// fs3[0]();
+// fs3[1]();
+// fs3[2]();
+
+
+// ***** Function Factories
+// *** means a function that return or makes other thing for us.

@@ -301,3 +301,22 @@
 // ***** Function Factories
 // *** means a function that return or makes other thing for us.
 
+function makeGreeting(language) {
+  return function (firstName, lastName) {
+
+    if (language === 'en') {
+      console.log('Hello ' + firstName + ' ' + lastName);
+    }
+
+    if (language === 'es') {
+      console.log('Hola ' + firstName + ' ' + lastName);
+    }
+
+  };
+}
+
+var greetEnglish = makeGreeting('en');
+var greetSpanish = makeGreeting('es');
+
+greetEnglish('Robin', 'Nami');
+greetSpanish('Alex', 'Zara');

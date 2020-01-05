@@ -319,5 +319,5 @@ function makeGreeting(language) {
 var greetEnglish = makeGreeting('en');
 var greetSpanish = makeGreeting('es');
 
-greetEnglish('Robin', 'Nami');
-greetSpanish('Alex', 'Zara');
+greetEnglish('Robin', 'Sheway');
+greetSpanish('Alex', 'Jensen');

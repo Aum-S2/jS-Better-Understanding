@@ -205,7 +205,9 @@
 
 
 // // Invokes With Parentheses
-// // Which one you choose is up to you but in parentheses is easier to understand what it is
+// // Which one you choose is up to you but in parentheses is easier to understand
+// // *** function expresion thats created on the fly - when the line of code is executed and it wrap in () parentheses just to trick the syntax parser and then put parentheses to actually run it. *So basically i created a function and running it all at the same time
+
 // var firstName = 'Lim';
 
 // (function(name) {
@@ -302,22 +304,22 @@
 // *** means a function that return or makes other thing for us.
 // *try
 
-function makeGreeting(language) {
-  return function (firstName, lastName) {
+// function makeGreeting(language) {
+//   return function (firstName, lastName) {
 
-    if (language === 'en') {
-      console.log('Hello ' + firstName + ' ' + lastName);
-    }
+//     if (language === 'en') {
+//       console.log('Hello ' + firstName + ' ' + lastName);
+//     }
 
-    if (language === 'es') {
-      console.log('Hola ' + firstName + ' ' + lastName);
-    }
+//     if (language === 'es') {
+//       console.log('Hola ' + firstName + ' ' + lastName);
+//     }
 
-  };
-}
+//   };
+// }
 
-var greetEnglish = makeGreeting('en');
-var greetSpanish = makeGreeting('es');
+// var greetEnglish = makeGreeting('en');
+// var greetSpanish = makeGreeting('es');
 
-greetEnglish('Robin', 'Sheway');
-greetSpanish('Alex', 'Jensen');
+// greetEnglish('Robin', 'Sheway');
+// greetSpanish('Alex', 'Jensen');
